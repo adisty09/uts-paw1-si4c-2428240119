@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="countainer">
+    <h2 class=" text-center bg-secondary text-black p-3 rounded mt-3">Daftar Belanja</h2>
+    Barang 
+    <input type="text" id="barang" class="form-control border-primary mb-3"/>
+    Jumlah 
+    <input type="text" id="jumlah" class="form-control border-primary mb-3"/>
+    Keterangan 
+    <input type="text" id="keterangan" class="form-control border-primary mb-3"/>
+    <button onclick="simpan()" class="btn btn-primary btn-block">Simpan</button>
+    <div id="list-mhs" class="row"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
