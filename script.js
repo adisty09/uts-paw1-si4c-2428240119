@@ -1,15 +1,18 @@
 let barang = document.getElementById("barang");
 let jumlah = document.getElementById("jumlah");
 let keterangan = document.getElementById("keterangan");
+let imageUrl = document.getElementById("imageUrl");
 
 function simpan() {
     console.log(barang.value)
     console.log(jumlah.value)
     console.log(keterangan.value)
+    console.log(imageUrl.value)
 
     localStorage.setItem("barang", barang.value)
     localStorage.setItem("jumlah", jumlah.value)
     localStorage.setItem("keterangan", keterangan.value)
+    localStorage.setItem("imageUrl", imageUrl.value)
 
     // jika localstorage bellum ada isi/value
     if(localStorage.getItem("daftar_belanja")===null){
@@ -24,7 +27,8 @@ function simpan() {
     data.push({
         barang: barang.value,
         jumlah: jumlah.value,
-        keterangan: keterangan.value
+        keterangan: keterangan.value,
+        imageUrl: imageUrl.value
     })
     console.log(data)
 
